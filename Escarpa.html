@@ -1,0 +1,674 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+   <link rel="shortcut icon" href="Imagem/Captura de tela 2025-01-12 142757.png" type="image/x-png">
+   <script src="main.js" defer></script>
+   <script src="conexão.php"></script>
+    <script src="https://kit.fontawesome.com/38a2a63017.js" crossorigin="anonymous"></script>
+   
+    <title>Escarpa</title>
+    
+  </head> 
+<body>
+<header>
+    
+
+
+<div class="navbar">
+     
+    
+    <ul class="navitem">
+
+  <li>Home</li>
+
+
+  <li>Shop</li>
+
+
+  <li>Sports</li>
+</ul>
+
+    
+    
+    
+    
+    
+    <img src="Imagem/logo.png">
+   
+    <div class="conteinericon">
+
+      <div class="navicon">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+
+      <div class="navicon">
+     <a href=""></a>
+    <i class="fa-solid fa-user"></i>
+  </div>
+
+      <div class="navicon">
+    <i class="fa-regular fa-heart"></i>
+      </div>
+
+      <div class="navicon">
+        <button id="cartbutton" onclick="togglecart()">
+        <i class="fa-solid fa-bag-shopping"></i>
+      <span id="cartcount" style="display:none;">0</span></button>
+
+      </div>
+
+  <div class="navicon">
+    <i class="fa-solid fa-grip-lines-vertical fa-rotate-90"></i>
+</div>
+   
+</div>
+
+</header>
+
+<div class="shopnow">
+
+
+
+<div class="video">
+<video src="Videos/background video.mp4" autoplay muted loop>
+</div>
+
+<div class="climb">
+<h1>Climbing Kit's</h1>
+</div>
+<div class="climb">
+<h2>Chase dream descents in gear
+designed for every condition.
+</h2>
+</div>
+
+
+
+
+<div class="climb">
+  
+<div class="buttoncont">
+ <button>Shop men's</button>
+<button>Shop women's</button>
+  </div>
+  </div>
+</div>
+
+<div class="nav-categories">
+
+  <div class="categories">
+
+
+    <button class="tabbtn" content-id="bestsellers">Best Sellers</button>
+    <button class="tabbtn" content-id="jacket">Jackets</button>
+    <button class="tabbtn" content-id="shoes">Shoes</button>
+    <button class="tabbtn" content-id="bag">Bag</button>
+    <button class="tabbtn" content-id="acessories">Accessories</button>
+
+
+  </div>
+</div>
+
+<div class="underline"></div>
+
+
+<div class="content">
+
+<div class="wrapper active" content-id="bestsellers">
+<!-- box 1 -->
+
+
+<div class="conteiner">
+
+
+<div class="imgbox">
+
+
+<img id="InkBlack" class="InkBlack active" src="Imagem/waterproof  Ink Black.png" alt="jacket waterproof Black">
+
+<img id="TidepoolBlue" class="TidepoolBlue" src="Imagem/waterproof Tidepool Blue.png" alt="jacket waterproof Blue">
+
+<img id="Basingreen" class="Basingreen" src="Imagem/waterproof Basin Green.png" alt="jacket waterproof green">
+
+<img id="ShelterBrown" class="ShelterBrown" src="Imagem/waterproof Shelter Brown.png" alt="jacket waterproof bronw">
+
+</div>
+
+<div class="info">
+<h2> Waterproof Escarpa Jacket</h2>
+</div>
+<div class="color-price">
+
+  <div class="colors">
+
+<span class="color">Color:</span>
+<div class="circles">
+
+<span class="circle InkBlack active" id="InkBlack"></span>
+
+<span class="circle TidepoolBlue" id="TidepoolBlue"></span>
+
+<span class="circle Basingreen" id="Basingreen"></span>
+
+<span class="circle ShelterBrown" id="ShelterBrown"></span>
+
+ </div>
+  </div>
+  
+  <div class="price">
+  <span>$199</span>
+</div>
+
+</div>
+
+<div class="btn"><button onclick="addToCart()">Add To Cart</button></div>
+
+ </div>
+
+
+
+<!-- box 2 -->
+
+
+ <div class="conteiner2">
+
+
+  <div class="imgbox2">
+  
+  
+  <img id="Black" class="Black active" src="Imagem/black pants.png" alt="pants Black">
+  
+  <img id="gray" class="gray" src="Imagem/gray pants.png" alt="pants gray">
+  
+  <img id="green" class="green" src="Imagem/green pants.png" alt="pants green">
+
+  </div>
+  
+  <div class="info2">
+  <h2> Pants Escarpa Cargo</h2>
+  </div>
+  <div class="color-price2">
+  
+    <div class="colors2">
+  
+  <span class="color2">Color:</span>
+  <div class="circles2">
+  
+  <span class="circle2 Black active" id="Black"></span>
+  
+  <span class="circle2 gray" id="gray"></span>
+  
+  <span class="circle2 green" id="green"></span>
+  
+   </div>
+    </div>
+    
+    <div class="price2">
+    <span>$99</span>
+  </div>
+  
+  </div>
+  
+  <div class="btn2"><button onclick="addToCart()">Add To Cart</button></div>
+  
+   </div>
+
+
+<!-- box 3 -->
+
+
+   <div class="conteiner3">
+
+
+    <div class="imgbox3">
+    
+    
+    <img id="GBlack" class="GBlack active" src="Imagem/black glasses.png" alt="sunglasses Black">
+    
+    <img id="GBlue" class="GBlue" src="Imagem/blue glasses.png" alt="sunglasses Blue">
+      
+    </div>
+    
+    <div class="info3">
+    <h2> Sunglasses Escarpa Pro</h2>
+    </div>
+    <div class="color-price3">
+    
+      <div class="colors3">
+    
+    <span class="color3">Color:</span>
+    <div class="circles3">
+    
+    <span class="circle3 GBlack active" id="GBlack"></span>
+    <span class="circle3 GBlue" id="GBlue"></span>
+    
+
+     </div>
+      </div>
+      
+      <div class="price3">
+      <span>$59</span>
+    </div>
+    
+    </div>
+    
+    <div class="btn3"><button onclick="addToCart()">Add To Cart</button></div>
+    
+     </div>
+</div>
+
+<!-- jACKETS -->
+
+
+<div class="wrapper hidden" content-id="jacket">
+
+  <div class="conteinerj">
+
+
+    <div class="imgboxj">
+    
+    
+    <img id="j2" class="j2 active" src="Imagem/jacket 2.png" alt="jacket2">
+    
+    <img id="j1" class="j1" src="Imagem/jacket 1.png" alt="jacket1">
+    
+    
+    </div>
+    
+    <div class="infoj">
+    <h2>Track  Suit Escarpa Jacket</h2>
+    </div>
+    <div class="color-pricej">
+    
+      <div class="colorsj">
+    
+    <span class="colorj">Color:</span>
+    <div class="circlesj">
+    
+    <span class="circlej j2 active" id="j2"></span>
+    
+    <span class="circlej j1" id="j1"></span>
+    
+   
+    
+     </div>
+      </div>
+      
+      <div class="pricej">
+      <span>$210</span>
+    </div>
+    
+    </div>
+    
+    <div class="btnj"><button onclick="addToCart()">Add To Cart</button></div>
+    
+     </div>
+     
+  <div class="conteinerj2">
+
+
+      <div class="imgboxj2">
+      
+      
+      <img id="j22" class="j22 active" src="Imagem/jacket 3.png" alt="jacket22">
+      
+      </div>
+      
+      <div class="infoj2">
+      <h2> Reflex Escarpa Jacket</h2>
+      </div>
+      <div class="color-pricej2">
+      
+        <div class="colorsj2">
+      
+      <span class="colorj2">Color:</span>
+      <div class="circlesj2">
+      
+      <span class="circlej2 j22 active" id="j22"></span>
+      
+     
+      
+     
+      
+       </div>
+        </div>
+        
+        <div class="pricej2">
+        <span>$219</span>
+      </div>
+      
+      </div>
+      
+      <div class="btnj2"><button onclick="addToCart()">Add To Cart</button></div>
+      
+       </div>
+
+  <div class="conteinerjn">
+
+
+        <div class="imgboxjn">
+        
+        
+        <img id="jeans" class="jeans active" src="Imagem/jeans jacket.png" alt="jacketjeans">
+       
+      
+        </div>
+        
+        <div class="infojn">
+        <h2>Jeans Ligth Escarpa Jacket</h2>
+        </div>
+        <div class="color-pricejn">
+        
+          <div class="colorsjn">
+        
+        <span class="colorjn">Color:</span>
+        <div class="circlesjn">
+        
+        <span class="circlejn jeans active" id="jeans"></span>
+        
+        
+        
+       
+        
+         </div>
+          </div>
+          
+          <div class="pricejn">
+          <span>$249</span>
+        </div>
+        
+        </div>
+        
+        <div class="btnjn"><button onclick="addToCart()">Add To Cart</button></div>
+        
+         </div>
+         
+  
+    
+      
+
+</div>
+
+
+<div class="wrapper hidden" content-id="shoes">
+
+
+
+  
+  
+</div>
+
+
+<div class="wrapper hidden" content-id="bag">
+ 
+</div>
+
+
+
+
+<div class="wrapper hidden" content-id="acessories">
+  <div class="conteinerC">
+
+
+    <div class="imgboxC">
+      <img id="luvaC" class="luvaC active" src="Imagem/luvasC.png" alt="luvaC">
+    
+    </div>
+    
+    <div class="infoC">
+    <h2>Rope Escarpa Glove</h2>
+    </div>
+    <div class="color-priceC">
+    
+      <div class="colorsC">
+    
+    <span class="colorC">Color:</span>
+    <div class="circlesC">
+    
+    <span class="circleC luvaC active" id="luvaC"></span>
+     </div>
+      </div>
+      
+      <div class="priceC">
+      <span>$60</span>
+    </div>
+    
+    </div>
+    
+    <div class="btnC"><button onclick="addToCart()">Add To Cart</button></div>
+    
+     </div>
+     <!-- box2C -->
+     <div class="conteinerC2">
+
+
+      <div class="imgboxC2">
+        <img id="tocaC" class="tocaC active" src="Imagem/tocaC.png" alt="tocaC">
+      
+      </div>
+      
+      <div class="infoC2">
+      <h2>Rope Escarpa Glove</h2>
+      </div>
+      <div class="color-priceC2">
+      
+        <div class="colorsC2">
+      
+      <span class="colorC2">Color:</span>
+      <div class="circlesC2">
+      
+      <span class="circleC2 tocaC active" id="tocaC"></span>
+      
+     
+      
+     
+      
+       </div>
+        </div>
+        
+        <div class="priceC2">
+        <span>$60</span>
+      </div>
+      
+      </div>
+      
+      <div class="btnC2"><button onclick="addToCart()">Add To Cart</button></div>
+      
+       </div>
+
+
+
+     <!-- box3C -->
+</div>
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sportwrapper" id="sport">
+
+
+<!-- climbiing -->
+  <div class="sportback">
+
+  <video src="Videos/climbing video.mp4" autoplay muted loop></video>
+  <div class="textclimb">
+    <h2>Climbing</h2>
+<button>Explore</button>
+  </div>
+</div>
+
+
+
+<!-- ski -->
+
+<div class="sportback">
+ 
+  <video src="Videos/Video ski.mp4" autoplay muted loop></video>
+  <div class="textski">
+    <h2>Snowboarding</h2>
+    <button>Explore</button>
+  </div>
+  
+</div>
+
+
+
+<!-- running -->
+<div class="sportback">
+  <video src="Videos/run video.mp4" autoplay muted loop></video>
+  <div class="textrun">
+    <h2>Trail Running</h2>
+    <button>Explore</button>
+  </div>
+</div>
+
+
+
+
+</div>
+
+ <div class="about"><img src="Imagem/escarpa waer.jpg">
+  <h1></h1>
+ <h2>Be complete. Wear Escarpa.</h2>
+</div> 
+
+<div class="contatos">
+ <div class="signup">
+  <h2>Signup</h2>
+  <p>Sign up for exclusive offers, original stories, activism awareness, events and more.</p>
+  <div class="i">
+    <input type="text" id="email" name="email" required>
+<label for="email">Email</label>
+</input>
+</div>
+<button>Sign Me Up</button>
+  </div>
+
+
+  <div class="help">
+    <H2>Need Help?</H2>
+
+  <div class="buttonhelp">
+      <button>Help Center</button>
+      <button>Order Status</button>
+    </div>
+  
+<button>Size & Fit Guide</button>
+
+<div class="buttonhelp">
+  <button>Accessibility</button>
+  <button>Login</button>
+</div>
+
+<button>Returns & Exchanges</button>
+  </div>
+
+
+<div class="socialmidias">
+<h2>More Info</h2>
+<p>Payment Methods:</p>
+
+<div class="pagaments">
+  
+<i class="fa-brands fa-pix" style="color: #7c7c7c;"></i>
+<i class="fa-brands fa-cc-visa" style="color: #7c7c7c;"></i>
+<i class="fa-brands fa-cc-mastercard" style="color: #7c7c7c;"></i>
+<i class="fa-solid fa-money-bill-1" style= "color: #7c7c7c;"></i>
+</div>
+
+
+<div class="redes">
+  <p>Social Midias</p>
+<div class="social">
+ <div class="insta" onclick="window.open('https:instagram.com' , '_blank')"><i class="fa-brands fa-instagram"></i></div>
+
+
+<div class="facebook" onclick="window.open('https:facebook.com' , '_blank')"><i class="fa-brands fa-facebook" ></i></div>
+
+
+<div class="twitter" onclick="window.open('https:x.com' , '_blank')"><i class="fa-brands fa-x-twitter"></i></div>
+
+
+<div class="tiktok" onclick="window.open('https:tiktok.com' , '_blank')"><i class="fa-brands fa-tiktok" ></i></div>
+
+
+<div class="yt" onclick="window.open('https:youtube.com' , '_blank')"><i class="fa-brands fa-youtube" ></i></div>
+</div>
+
+
+
+
+
+
+
+</div>
+</div>
+
+
+</div>
+
+
+<!-- shopcart -->
+ 
+ <div class="shopmenu" id="shopmenu" style="display:none;">
+<h2>Your Bag</h2>
+<div class="cartitem"></div>
+
+
+<button class="buttoncart">
+  Checkout
+</button>
+<button class="continueshopping">
+  Continue Shopping
+</button>
+
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+</body>
+    
+
+</html>
